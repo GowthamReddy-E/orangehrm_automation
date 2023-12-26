@@ -8,6 +8,7 @@
   <groupId>OrangeHRM_Automation</groupId>
   <artifactId>OrangeHRM_Automation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
   
   <!-- This is the allure repo -->
   <name>AllureReporting</name>
@@ -42,6 +43,15 @@
           </suiteXmlFiles>
         </configuration>
       </plugin>
+       <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.4.0</version>
+            <configuration>
+                <webXml>web.xml</webXml>
+            </configuration>
+        </plugin>
+      <!-- 
       <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -54,18 +64,7 @@
                     </archive>
                 </configuration>
             </plugin>
-               <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>com.example.helloworldjava</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
+        -->    
     </plugins>
   </build>
   
