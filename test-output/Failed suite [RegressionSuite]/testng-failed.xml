@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [RegressionSuite]]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="env" value="dev"/>
+  <test thread-count="5" name="RegressionTest(failed)(failed)">
+    <classes>
+      <class name="com.satwa.tests.Deals">
+        <methods>
+          <include name="deleteMultipleDeals"/>
+          <include name="createNewDeal_pastDate"/>
+          <include name="deleteDeal"/>
+        </methods>
+      </class> <!-- com.satwa.tests.Deals -->
+      <class name="com.satwa.tests.Contacts">
+        <methods>
+          <include name="modifyContact"/>
+          <include name="createNewCOntact" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.satwa.tests.Contacts -->
+    </classes>
+  </test> <!-- RegressionTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [RegressionSuite]] -->
