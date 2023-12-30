@@ -3,26 +3,27 @@ pipeline {
 
     stages {
         // stage('Check out') {
-          // steps {
-            //  echo "checkOut into the github and clone"
-              // git credentialsId: 'GITHUB', url: 'https://github.com/GowthamReddy-E/OrangeHRM_Automation.git'
-  //        }
-    //    }
-        stage('Build') {
-            steps {
-                echo 'Building...'
-                  sh 'mvn clean install'
-            }
-        }
+        //     steps {
+        //         echo "Checking out from GitHub and cloning..."
+        //         git credentialsId: 'GITHUB', url: 'https://github.com/GowthamReddy-E/OrangeHRM_Automation.git'
+        //     }
+        // }
         stage('Test') {
             steps {
                 echo 'Testing...'
                 sh 'mvn clean test'
             }
         }
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                sh 'mvn clean install'
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
+                // Add deployment steps as needed
             }
         }
     }
