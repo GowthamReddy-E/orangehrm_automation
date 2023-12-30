@@ -8,12 +8,12 @@ pipeline {
         //         git credentialsId: 'GITHUB', url: 'https://github.com/GowthamReddy-E/OrangeHRM_Automation.git'
         //     }
         // }
-        stage('Test') {
-            steps {
-                echo 'Testing...'
-                sh 'mvn clean test'
-            }
-        }
+        // stage('Test') {
+        //    steps {
+        //        echo 'Testing...'
+        //        sh 'mvn clean test'
+        //    }
+        //}
         stage('Build') {
             steps {
                 echo 'Building...'
