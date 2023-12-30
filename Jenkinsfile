@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'one' }  // Restrict the job to run on a node with the specified label
+    agent { label 'three' }  // Restrict the job to run on a node with the specified label
 
     stages {
         // stage('Check out') {
