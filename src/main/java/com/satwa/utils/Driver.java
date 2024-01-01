@@ -72,5 +72,9 @@ public class Driver {
 	public void quitWindow() {
 		driver.quit();
 	}
+	
+	public void name() {
+		System.out.println("this is sample method");
+	}
 
 }

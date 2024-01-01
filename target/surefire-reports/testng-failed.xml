@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression_CreateEmployee]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="env" value="qa"/>
+  <test thread-count="5" name="edge(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.satwa.tests.CreateEmployee">
+        <methods>
+          <include name="finalizeExecution"/>
+          <include name="setUpExecution"/>
+          <include name="AddEmployee01_AddEmployeeWithUsernameAndPassword"/>
+          <include name="intializeTest"/>
+          <include name="afterMethod"/>
+          <include name="setUpPages"/>
+          <include name="initializeReport"/>
+        </methods>
+      </class> <!-- com.satwa.tests.CreateEmployee -->
+    </classes>
+  </test> <!-- edge(failed) -->
+</suite> <!-- Failed suite [Regression_CreateEmployee] -->
