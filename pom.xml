@@ -127,4 +127,11 @@
     </dependency>
     
   </dependencies>
+  <distributionManagement>
+     <repository>
+        <id>github</id>
+        <name>OrangeHRM_Automation</name>
+        <url>https://github.com/GowthamReddy-E/OrangeHRM_Automation</url>
+    </repository>   
+</distributionManagement>
 </project>
