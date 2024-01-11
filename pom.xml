@@ -5,10 +5,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>OrangeHRM_Automation</groupId>
-  <artifactId>OrangeHRM_Automation</artifactId>
+  <groupId>orangehrm_automation</groupId>
+  <artifactId>orangehrm_automation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   
   <!-- This is the allure repo -->
   <name>AllureReporting</name>
@@ -43,7 +43,7 @@
           </suiteXmlFiles>
         </configuration>
       </plugin>
-       <plugin>
+    <!--    <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
             <version>3.4.0</version>
@@ -51,6 +51,7 @@
                 <webXml>web.xml</webXml>
             </configuration>
         </plugin>
+        -->
       <!-- 
       <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -59,12 +60,37 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.example.OrangeHRM_Automation</mainClass>
+                            <mainClass>com.example.orangehrm_automation</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
         -->    
+         <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-plugin-plugin</artifactId>
+                    <version>3.6.0</version>
+                    <configuration>
+                        <!-- see http://jira.codehaus.org/browse/MNG-5346 -->
+                        <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.9.1</version>
+                </plugin>
+                <plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>3.0.0-M1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>3.0.0-M2</version>
+				</plugin>
+
     </plugins>
   </build>
   
@@ -127,11 +153,28 @@
     </dependency>
     
   </dependencies>
-  <distributionManagement>
-     <repository>
-        <id>OrangeHRM_Automation</id>
-        <name>OrangeHRM_Automation</name>
-        <url>https://maven.pkg.github.com/GowthamReddy-E/OrangeHRM_Automation</url>
-    </repository>   
+    <distributionManagement>
+    <repository>
+        <id>github</id>
+        <name>this is the orangehrm_automation package</name>
+        <url>https://maven.pkg.github.com/GowthamReddy-E/orangehrm_automation</url>
+    </repository>
 </distributionManagement>
+    <developers>
+        <developer>
+            <name>Gowtham reddy</name>
+            <email>gowthamreddy.6991@gmail.com</email>
+            <organization>com.github.gowthamreddy-e</organization>
+            <organizationUrl>https://github.com/GowthamReddy-E/orangehrm_automation</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/GowthamReddy-E/orangehrm_automation.git</connection>
+        <developerConnection>scm:git:https://github.com/GowthamReddy-E/orangehrm_automation.git
+        </developerConnection>
+        <url>https://github.com/GowthamReddy-E/orangehrm_automation</url>
+        <tag>orangehrm_automation</tag>
+    </scm>
+
 </project>

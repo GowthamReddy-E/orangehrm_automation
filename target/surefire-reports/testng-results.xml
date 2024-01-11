@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-11T12:54:09 IST" name="Regression_CreateEmployee" finished-at="2024-01-11T12:55:22 IST" duration-ms="73025">
+  <suite started-at="2024-01-11T13:57:58 IST" name="Regression_CreateEmployee" finished-at="2024-01-11T13:58:34 IST" duration-ms="36101">
     <groups>
     </groups>
-    <test started-at="2024-01-11T12:54:09 IST" name="edge" finished-at="2024-01-11T12:55:22 IST" duration-ms="73025">
+    <test started-at="2024-01-11T13:57:58 IST" name="edge" finished-at="2024-01-11T13:58:34 IST" duration-ms="36101">
       <class name="com.satwa.tests.CreateEmployee">
-        <test-method is-config="true" signature="setUpExecution(java.lang.String)[pri:0, instance:com.satwa.tests.CreateEmployee@cb0755b]" started-at="2024-01-11T12:54:09 IST" name="setUpExecution" finished-at="2024-01-11T12:54:09 IST" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="setUpExecution(java.lang.String)[pri:0, instance:com.satwa.tests.CreateEmployee@712625fd]" started-at="2024-01-11T13:57:58 IST" name="setUpExecution" finished-at="2024-01-11T13:57:58 IST" duration-ms="103" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,18 +18,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpExecution -->
-        <test-method is-config="true" signature="initializeReport(org.testng.ITestContext)[pri:0, instance:com.satwa.tests.CreateEmployee@cb0755b]" started-at="2024-01-11T12:54:09 IST" name="initializeReport" finished-at="2024-01-11T12:54:10 IST" duration-ms="406" status="PASS">
+        <test-method is-config="true" signature="initializeReport(org.testng.ITestContext)[pri:0, instance:com.satwa.tests.CreateEmployee@712625fd]" started-at="2024-01-11T13:57:58 IST" name="initializeReport" finished-at="2024-01-11T13:57:58 IST" duration-ms="359" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@51f68849]]>
+                <![CDATA[org.testng.TestRunner@5df2023c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeReport -->
-        <test-method is-config="true" signature="intializeTest(java.lang.String,java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.satwa.tests.CreateEmployee@cb0755b]" started-at="2024-01-11T12:54:10 IST" name="intializeTest" finished-at="2024-01-11T12:54:20 IST" duration-ms="10620" status="PASS">
+        <test-method is-config="true" signature="intializeTest(java.lang.String,java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.satwa.tests.CreateEmployee@712625fd]" started-at="2024-01-11T13:57:58 IST" name="intializeTest" finished-at="2024-01-11T13:58:20 IST" duration-ms="21888" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,69 +43,26 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@51f68849]]>
+                <![CDATA[org.testng.TestRunner@5df2023c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeTest -->
-        <test-method is-config="true" signature="setUpPages()[pri:0, instance:com.satwa.tests.CreateEmployee@cb0755b]" started-at="2024-01-11T12:54:20 IST" name="setUpPages" finished-at="2024-01-11T12:54:21 IST" duration-ms="760" status="PASS">
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:com.satwa.tests.CreateEmployee@712625fd]" started-at="2024-01-11T13:58:20 IST" name="setUpPages" finished-at="2024-01-11T13:58:21 IST" duration-ms="1077" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPages -->
-        <test-method signature="AddEmployee01_AddEmployeeWithUsernameAndPassword()[pri:0, instance:com.satwa.tests.CreateEmployee@cb0755b]" started-at="2024-01-11T12:54:21 IST" name="AddEmployee01_AddEmployeeWithUsernameAndPassword" finished-at="2024-01-11T12:55:22 IST" duration-ms="60501" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Login page is not displayed on launching the application]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login page is not displayed on launching the application
-at org.testng.Assert.fail(Assert.java:110)
-at com.satwa.tests.CreateEmployee.AddEmployee01_AddEmployeeWithUsernameAndPassword(CreateEmployee.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="AddEmployee01_AddEmployeeWithUsernameAndPassword()[pri:0, instance:com.satwa.tests.CreateEmployee@712625fd]" started-at="2024-01-11T13:58:21 IST" name="AddEmployee01_AddEmployeeWithUsernameAndPassword" finished-at="2024-01-11T13:58:33 IST" duration-ms="11861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddEmployee01_AddEmployeeWithUsernameAndPassword -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.satwa.tests.CreateEmployee@cb0755b]" started-at="2024-01-11T12:55:22 IST" name="afterMethod" finished-at="2024-01-11T12:55:22 IST" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.satwa.tests.CreateEmployee@712625fd]" started-at="2024-01-11T13:58:33 IST" name="afterMethod" finished-at="2024-01-11T13:58:33 IST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="finalizeExecution()[pri:0, instance:com.satwa.tests.CreateEmployee@cb0755b]" started-at="2024-01-11T12:55:22 IST" name="finalizeExecution" finished-at="2024-01-11T12:55:22 IST" duration-ms="444" status="PASS">
+        <test-method is-config="true" signature="finalizeExecution()[pri:0, instance:com.satwa.tests.CreateEmployee@712625fd]" started-at="2024-01-11T13:58:33 IST" name="finalizeExecution" finished-at="2024-01-11T13:58:34 IST" duration-ms="647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizeExecution -->
