@@ -29,25 +29,25 @@ public class PimPage extends EventUtil{
 	@FindBy(xpath = "//a[normalize-space()='Add Employee']")
 	private WebElement btnAddEmployee;
 
-	@FindBy(xpath ="//input[@placeholder='First Name']")
+	@FindBy(xpath ="/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/input[1]")
 	private WebElement txtEmpFirstName;
 
-	@FindBy(xpath ="//input[@placeholder='Middle Name']")
+	@FindBy(xpath ="/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/input[1]")
 	private WebElement txtEmpMiddleName;
 
-	@FindBy(xpath ="//input[@placeholder='Last Name']")
+	@FindBy(xpath ="/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/input[1]")
 	private WebElement txtEmpLastName;
 
 	@FindBy(xpath ="//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")
 	private WebElement rdBtnCreateLogin;
 
-	@FindBy(xpath ="//body/div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-background-container']/div[@class='orangehrm-card-container']/form[@class='oxd-form']/div[@class='orangehrm-employee-container']/div[@class='orangehrm-employee-form']/div[@class='oxd-form-row']/div[1]/div[1]/div[1]/div[2]/input[1]")
+	@FindBy(xpath ="/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[2]/input[1]")
 	private WebElement txtUserName;
 
-	@FindBy(xpath ="//div[@class='oxd-grid-item oxd-grid-item--gutters user-password-cell']//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@type='password']")
+	@FindBy(xpath ="/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/div[4]/div[1]/div[1]/div[1]/div[2]/input[1]")
 	private WebElement btnPasswd;
 
-	@FindBy(xpath ="//div[@class='oxd-grid-item oxd-grid-item--gutters']//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@type='password']")
+	@FindBy(xpath ="/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[2]/input[1]")
 	private WebElement btnCnfrmPasswd;
 
 	@FindBy(xpath ="//button[normalize-space()='Save']")

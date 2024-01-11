@@ -129,9 +129,9 @@
   </dependencies>
   <distributionManagement>
      <repository>
-        <id>github</id>
+        <id>OrangeHRM_Automation</id>
         <name>OrangeHRM_Automation</name>
-        <url>https://github.com/GowthamReddy-E/OrangeHRM_Automation</url>
+        <url>https://maven.pkg.github.com/GowthamReddy-E/OrangeHRM_Automation</url>
     </repository>   
 </distributionManagement>
 </project>

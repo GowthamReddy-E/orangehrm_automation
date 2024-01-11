@@ -24,10 +24,10 @@ public class LoginPage extends EventUtil {
 	}
 
 
-	@FindBy(xpath = "//input[@placeholder='Username']")
+	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[1]/div[1]/div[2]/input[1]")
 	private WebElement txtUserName;
 
-	@FindBy(xpath ="//input[@placeholder='Password']")
+	@FindBy(xpath ="/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[2]/div[1]/div[2]/input[1]")
 	private WebElement txtPassword;
 
 	@FindBy(xpath="//button[@type='submit']")
